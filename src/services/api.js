@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://backend:8000/api', // 'http://localhost:8000/api' set this if running locally
+  baseURL: 'http://uniblox.ap-south-1.elasticbeanstalk.com/api', // 'http://localhost:8000/api' set this if running locally
 });
 
 api.interceptors.request.use(
