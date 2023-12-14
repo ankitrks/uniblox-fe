@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://testankit.site/api', // 'http://localhost:8000/api' set this if running locally
+  baseURL: 'https://api.testankit.site/api', // 'http://localhost:8000/api' set this if running locally
 });
 
 api.interceptors.request.use(
