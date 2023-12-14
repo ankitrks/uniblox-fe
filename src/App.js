@@ -26,6 +26,7 @@ function App() {
             path="/login"
             element={isLoggedIn ? <Navigate to="/products" /> : <Login onLogin={handleLogin} />}
           />
+          <Route path="/checkout" element={isLoggedIn ? <Checkout /> : <Navigate to="/login" />} />
           <Route path="/products" element={isLoggedIn ? <AddToCart /> : <Navigate to="/login" />} />
           <Route path="/checkout" element={isLoggedIn ? <Checkout /> : <Navigate to="/login" />} />
           <Route path="/purchase-details" element={isLoggedIn ? <PurchaseDetails /> : <Navigate to="/login" />} />
